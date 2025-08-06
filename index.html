@@ -1,15 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SignalAlly - Smarter Crypto Signals</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 48px;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background: #00c4a7;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    .hero button {
+      background: white;
+      color: #00c4a7;
+      font-weight: bold;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .features {
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    .features h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .features ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .features li {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .signup {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .signup input {
+      padding: 0.5rem;
+      width: 250px;
+      max-width: 80%;
+      margin-right: 0.5rem;
+    }
+    .signup button {
+      padding: 0.5rem 1rem;
+      background-color: #00c4a7;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 <body>
-  <header class="header">
-    <img src="assets/logo.png" alt="SignalAlly Logo" class="logo" />
-    <nav class="nav">
+  <header>
+    <img src="assets/logo.png" alt="SignalAlly Logo" />
+    <nav>
       <a href="#features">Features</a>
       <a href="#beta">Beta Signup</a>
       <a href="mailto:info@signalally.com">Contact</a>
@@ -19,7 +104,7 @@
   <section class="hero">
     <h1>Smarter Signals. Stronger Moves.</h1>
     <p>Your AI-powered assistant for smarter crypto trades — combining real-time signals, sentiment analysis, and strategy so you never trade blind.</p>
-    <a href="#beta" class="cta-button">Join Early Access</a>
+    <button onclick="document.getElementById('beta').scrollIntoView({ behavior: 'smooth' });">Join Early Access</button>
   </section>
 
   <section class="features" id="features">
@@ -27,14 +112,14 @@
     <ul>
       <li>📈 Real-time buy/sell crypto signals</li>
       <li>🧠 Sentiment analysis from across the web</li>
-      <li>📧 SMS/email alerts when it matters</li>
-      <li>📈 Personal signal dashboard</li>
-      <li>📃 Trade journaling tools</li>
+      <li>📩 SMS/email alerts when it matters</li>
+      <li>📊 Personal signal dashboard</li>
+      <li>📘 Trade journaling tools</li>
       <li>🏅 Referral rewards</li>
     </ul>
   </section>
 
-  <section class="beta-signup" id="beta">
+  <section class="signup" id="beta">
     <h2>Join the Beta</h2>
     <form action="https://formspree.io/f/mqalgzlv" method="POST">
       <input type="email" name="email" placeholder="Enter your email" required />

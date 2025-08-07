@@ -12,8 +12,11 @@ header {
     background: #111;
     padding: 10px 20px;
 }
-.logo {
-    height: 80px;
+.logo { height: 120px; }
+@media (min-width: 1024px) {
+  .logo { height: 160px; }
+}
+
 }
 nav a {
     color: #fff;

@@ -45,7 +45,9 @@ footer {
     color: #fff;
 }
 /* style.css */
-.logo { background:#0f1c1a; padding:6px 10px; border-radius:10px; }
+header { background: #0f1c1a; }           /* softer than pure black */
+.brand .name { color:#eafaf7; }
+
 /* style.css */
 nav a { color:#ffffff !important; margin-left:16px; text-decoration:none; }
 nav a:hover { color:#00c4a7 !important; }

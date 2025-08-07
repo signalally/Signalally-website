@@ -46,3 +46,8 @@ footer {
 }
 /* style.css */
 .logo { background:#0f1c1a; padding:6px 10px; border-radius:10px; }
+/* style.css */
+nav a { color:#ffffff !important; margin-left:16px; text-decoration:none; }
+nav a:hover { color:#00c4a7 !important; }
+a { color:#0b8b78; }         /* body links */
+a:hover { color:#066e61; }

@@ -9,8 +9,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #111;
+    background: #0f1c1a;   /* greenish tone */
     padding: 10px 20px;
+}
+
 }
 .logo { height: 120px; }
 @media (min-width: 1024px) {

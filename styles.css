@@ -47,10 +47,6 @@ footer {
     color: #fff;
 }
 /* style.css */
-header { background: #0f1c1a; }           /* softer than pure black */
-.brand .name { color:#eafaf7; }
-
-/* style.css */
 nav a { color:#ffffff !important; margin-left:16px; text-decoration:none; }
 nav a:hover { color:#00c4a7 !important; }
 a { color:#0b8b78; }         /* body links */

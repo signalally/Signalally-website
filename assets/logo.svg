@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48">
+  <rect x="6" y="10" rx="8" ry="8" width="44" height="28" fill="#00c4a7"/>
+  <path d="M14 28l7-7 6 6 8-8 5 5" stroke="#0f1c1a" stroke-width="3" fill="none"/>
+  <text x="60" y="31" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="20" fill="#0f1c1a">Signal</text>
+  <text x="120" y="31" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="20" fill="#00c4a7">Ally</text>
+</svg>

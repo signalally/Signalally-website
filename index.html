@@ -4,32 +4,41 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>SignalAlly — Simple, Safe, Automated Crypto Signals</title>
+  <meta name="description" content="SignalAlly turns noise into clarity with real-time crypto signals, risk presets, and optional automation." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header -->
+  <!-- Header / Nav -->
   <header class="bar light">
     <div class="brand">
       <img class="logo" src="assets/logo.svg" alt="SignalAlly" />
-      <div style="font-weight:700">SignalAlly</div>
-      <nav style="margin-left:auto">
+      <div class="brand-name">SignalAlly</div>
+      <nav class="nav">
         <a href="index.html">Home</a>
-        <a href="https://beta.signalally.com">Beta Dashboard</a>
+        <a href="about.html">About</a>
+        <a href="education.html">Education</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a class="beta" href="https://beta.signalally.com">Beta</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero -->
-  <main class="wrap section">
-    <h1>Simple, Safe, Automated Crypto Signals</h1>
-    <p class="lead">
-      SignalAlly makes crypto easy — follow trusted trading signals, automate your moves, and track your results.
-    </p>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Simple, Safe, Automated Crypto Signals</h1>
+      <p class="lead">Follow clear buy/sell/hold signals, set sane risk rules, and track results — without living on charts.</p>
+      <p><a class="cta" href="https://beta.signalally.com">Open the Beta Dashboard</a></p>
+    </div>
+  </section>
 
+  <!-- Signup -->
+  <section class="wrap section" id="beta-signup">
     <h2>Join the Beta</h2>
-    <p>Be one of the first to try SignalAlly before public launch. Spaces are limited.</p>
+    <p class="muted">We’ll invite testers in waves. Spots are limited.</p>
 
-    <!-- Beta Signup Form -->
+    <!-- Netlify Form -->
     <form name="beta-signup" method="POST" data-netlify="true" netlify-honeypot="hp" action="/thank-you.html" class="form">
       <input type="hidden" name="form-name" value="beta-signup" />
       <p style="display:none"><label>Do not fill this out: <input name="hp" /></label></p>
@@ -43,12 +52,19 @@
       <button type="submit">Request Invite</button>
     </form>
 
-    <p class="muted small">
-      We’ll only use your email to send your beta invite — no spam, ever.
-    </p>
-  </main>
+    <p class="small muted">We’ll only use your email to send your beta invite — no spam, ever.</p>
+  </section>
 
-  <!-- Footer -->
+  <!-- Why -->
+  <section class="wrap section">
+    <h2>Why SignalAlly</h2>
+    <div class="grid">
+      <div class="card"><h3>Clear Signals</h3><p>BUY/SELL/HOLD with plain-English reasons — no mystery math.</p></div>
+      <div class="card"><h3>Risk Presets</h3><p>Safe, Balanced, or Active — pick once and trade with confidence.</p></div>
+      <div class="card"><h3>Hands-Off Option</h3><p>Connect an exchange (optional) and let rules execute for you.</p></div>
+    </div>
+  </section>
+
   <footer>
     <div class="wrap small muted">© 2025 SignalAlly</div>
   </footer>

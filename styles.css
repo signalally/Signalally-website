@@ -1,160 +1,19 @@
-/* ==========================================================================
-   SignalAlly – Global Styles
-   ========================================================================== */
-
-:root{
-  --bg:#f9fbfa;
-  --text:#0f1c1a;
-  --muted:#6b7280;
-  --card:#ffffff;
-  --border:#e5e7eb;
-  --shadow:0 6px 24px rgba(0,0,0,.06);
-
-  --brand:#00c4a7;
-  --brand-800:#0b8b78;
-  --brand-900:#066e61;
-
-  --header:#0f1c1a;        /* dark header */
-  --header-text:#eafaf7;   /* light mint text in brand area */
-}
-
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;overflow-x:hidden;background:var(--bg);color:var(--text);font:16px/1.55 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-
-/* Links */
-a{color:var(--brand-800);text-decoration:none}
-a:hover{color:var(--brand-900);text-decoration:underline}
-
-/* Layout helpers */
-.wrap,.container{max-width:1120px;margin:0 auto;padding:0 24px}
-.section{padding:56px 0;border-top:1px solid var(--border)}
-.grid{display:grid;grid-template-columns:1fr;gap:16px}
-@media(min-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
-.card{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow)}
-.card{padding:18px}
-
-/* Headings / text */
-h1,h2,h3{margin:0 0 .4em}
-h1{font-size:36px;line-height:1.2}
-h2{font-size:24px}
-h3{font-size:18px}
-.lead{color:var(--muted);max-width:720px;margin:0 auto 22px;text-align:center}
-
-/* ==========================================================================
-   Header / Nav
-   ========================================================================== */
-header.bar{background:var(--header);color:#fff}
-header .wrap{
-  display:flex;align-items:center;justify-content:space-between;gap:12px;
-  padding:12px 24px;flex-wrap:wrap; /* allow nice wrapping on mobile */
-}
-header .brand{display:flex;align-items:center;gap:10px}
-header .brand .name{color:var(--header-text);font-weight:600}
+/* SignalAlly Global Styles (main) */
+:root{--bg:#f9fbfa;--text:#0f1c1a;--muted:#6b7280;--card:#fff;--border:#e5e7eb;--shadow:0 6px 24px rgba(0,0,0,.06);--brand:#00c4a7;--brand-800:#0b8b78;--brand-900:#066e61}
+*{box-sizing:border-box}html,body{margin:0;padding:0;overflow-x:hidden;background:var(--bg);color:var(--text);font:16px/1.55 Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+a{color:var(--brand-800);text-decoration:none}a:hover{color:var(--brand-900);text-decoration:underline}
+.wrap,.container{max-width:1120px;margin:0 auto;padding:0 24px}.section{padding:56px 0;border-top:1px solid var(--border)}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}@media(min-width:860px){.grid{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);padding:18px}
+h1,h2,h3{margin:0 0 .4em}h1{font-size:36px;line-height:1.2}h2{font-size:24px}h3{font-size:18px}.lead{color:var(--muted);max-width:720px;margin:0 auto 22px;text-align:center}
+header.bar{background:#fff;color:var(--text);border-bottom:1px solid var(--border)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 24px;flex-wrap:wrap}
+header .brand{display:flex;align-items:center;gap:10px}.brand .name{font-weight:600}
 header .logo{height:28px}
 header nav{display:flex;align-items:center;gap:18px;flex-wrap:wrap;row-gap:8px}
-header nav a{color:#fff}
-header nav a:hover{color:var(--brand)}
-
-/* Page hero */
-.hero{text-align:center;padding:56px 0}
-.hero .cta{display:inline-block;background:var(--brand);color:#083a33;
-  padding:12px 18px;border-radius:10px;font-weight:600;border:0}
-.hero .cta:hover{filter:brightness(.95)}
-
-/* Footer */
-.foot{background:#0d1513;color:#cdebe5;padding:24px 0;margin-top:48px}
-.foot a{color:#a8efe3}
-
-/* ==========================================================================
-   Beta Dashboard widgets (signals / stats / meta)
-   ========================================================================== */
-
-.signals{display:flex;flex-direction:column;gap:12px}
-.row{display:grid;grid-template-columns:110px 1fr 160px 200px;gap:10px;
-  align-items:center;padding:12px 14px;border-radius:12px;border:1px solid var(--border);
-  background:var(--card)}
-.row strong{font-weight:700}
-.row .muted{color:var(--muted)}
-/* subtle tinted rows by side/type */
-.row.buy{background:linear-gradient(0deg,#e9fdf6, #fff)}
-.row.sell{background:linear-gradient(0deg,#fff1f1,#fff)}
-.row.hold{background:linear-gradient(0deg,#faf8ea,#fff)}
-
-.stats-box{background:var(--card);border:1px solid var(--border);
-  border-radius:14px;box-shadow:var(--shadow);padding:18px}
-.stats-box ul{list-style:none;margin:0;padding:0}
-.stats-box li{margin:8px 0}
-
-.feed-box{background:var(--card);border:1px solid var(--border);
-  border-radius:14px;box-shadow:var(--shadow);padding:14px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
-.feed-box code, .code{white-space:pre-wrap}
-
-/* ==========================================================================
-   Buttons (general)
-   ========================================================================== */
-.btn{display:inline-flex;align-items:center;gap:8px;border-radius:12px;
-  border:1px solid var(--border);padding:10px 14px;background:#fff;color:var(--text)}
-.btn.primary{background:var(--brand);color:#083a33;border-color:transparent}
-.btn:hover{filter:brightness(.98)}
-.btn.primary:hover{filter:brightness(.95)}
-
-/* ==========================================================================
-   Why section cards – improve contrast on brand background
-   ========================================================================== */
-.why .card,
-.section.why .card{
-  background:#f6fffb;         /* very light mint */
-  color:var(--text);
-  border:1px solid #d6eee8;
-  box-shadow:var(--shadow);
-}
-.why .card h3{color:var(--brand-800)}
-
-/* ==========================================================================
-   Forms (Netlify / Formspree)
-   ========================================================================== */
-form input, form button{
-  font:inherit
-}
-input[type="email"],input[type="text"],textarea{
-  width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;
-  background:#fff;color:var(--text)
-}
-input:focus,textarea:focus{outline:2px solid #b7efe6;border-color:#8de2d6}
-button[type="submit"]{background:var(--brand);color:#083a33;border:0;border-radius:10px;padding:12px 16px;font-weight:600;cursor:pointer}
-button[type="submit"]:hover{filter:brightness(.95)}
-
-/* ==========================================================================
-   Responsive polish
-   ========================================================================== */
-
-/* stop any sideways scroll & keep media fluid */
-img,svg{max-width:100%;height:auto}
-@media (max-width:1024px){
-  .row{grid-template-columns:100px 1fr 140px 180px}
-}
-@media (max-width:768px){
-  .wrap,.container{padding-inline:16px}
-  h1{font-size:28px}
-  header .logo{height:24px}
-  header nav a{font-size:15px;padding:6px 0}
-  .row{grid-template-columns:90px 1fr 120px; /* drop one column on small screens */
-       grid-auto-rows:auto}
-  .row > :nth-child(4){grid-column:1 / -1}  /* move reason/time under row on mobile */
-}
-@media (max-width:420px){
-  header nav{gap:12px}
-  .row{grid-template-columns:1fr}
-}
-/* === Header visibility override (light header, readable logo/links) === */
-header.bar{
-  background:#ffffff !important;
-  color: var(--text) !important;
-  border-bottom: 1px solid var(--border);
-}
-header .brand .name{ color: var(--text) !important; }
-header nav a{ color: var(--text) !important; }
-header nav a:hover{ color: var(--brand-800) !important; }
-
-/* prevent overflow + tidy wrap on small screens */
-header .wrap{ flex-wrap: wrap; row-gap: 6px; }
+header nav a{color:var(--text)}header nav a:hover{color:var(--brand-800)}
+.hero{text-align:center;padding:56px 0}.hero .cta{display:inline-block;background:var(--brand);color:#083a33;padding:12px 18px;border-radius:10px;font-weight:600;border:0}.hero .cta:hover{filter:brightness(.95)}
+footer{border-top:1px solid var(--border);padding:24px 0;margin-top:48px}.small{font-size:12px}.muted{color:var(--muted)}
+.why .card{background:#f6fffb;border:1px solid #d6eee8}.why .card h3{color:#0b8b78}
+form input,form button{font:inherit}input[type=email],input[type=text],textarea{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;background:#fff;color:var(--text)}input:focus,textarea:focus{outline:2px solid #b7efe6;border-color:#8de2d6}button[type=submit]{background:var(--brand);color:#083a33;border:0;border-radius:10px;padding:12px 16px;font-weight:600;cursor:pointer}button[type=submit]:hover{filter:brightness(.95)}
+img,svg{max-width:100%;height:auto}@media (max-width:768px){.wrap,.container{padding-inline:16px}h1{font-size:28px}header .logo{height:24px}header nav a{font-size:15px;padding:6px 0}}

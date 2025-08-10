@@ -146,3 +146,15 @@ img,svg{max-width:100%;height:auto}
   header nav{gap:12px}
   .row{grid-template-columns:1fr}
 }
+/* === Header visibility override (light header, readable logo/links) === */
+header.bar{
+  background:#ffffff !important;
+  color: var(--text) !important;
+  border-bottom: 1px solid var(--border);
+}
+header .brand .name{ color: var(--text) !important; }
+header nav a{ color: var(--text) !important; }
+header nav a:hover{ color: var(--brand-800) !important; }
+
+/* prevent overflow + tidy wrap on small screens */
+header .wrap{ flex-wrap: wrap; row-gap: 6px; }

@@ -1,68 +1,56 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>SignalAlly • Home</title>
-<meta name="description" content="Trade smarter with clear crypto signals, risk presets, and optional automation." />
-<link rel="icon" href="/assets/favicon.svg" />
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SignalAlly — Simple, Safe, Automated Crypto Signals</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="bar light">
+    <div class="brand">
+      <img class="logo" src="assets/logo.svg" alt="SignalAlly" />
+      <div style="font-weight:700">SignalAlly</div>
+      <nav style="margin-left:auto">
+        <a href="index.html">Home</a>
+        <a href="https://beta.signalally.com">Beta Dashboard</a>
+      </nav>
+    </div>
+  </header>
 
-<link rel="stylesheet" href="styles.css" />
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXX');
-</script>
+  <!-- Hero -->
+  <main class="wrap section">
+    <h1>Simple, Safe, Automated Crypto Signals</h1>
+    <p class="lead">
+      SignalAlly makes crypto easy — follow trusted trading signals, automate your moves, and track your results.
+    </p>
 
-</head><body>
-<header class="bar light">
-  <div class="brand">
-    <img class="logo" src="assets/logo.svg" alt="SignalAlly" />
-    <div style="font-weight:700">SignalAlly</div>
-    <nav style="margin-left:auto">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="education.html">Education</a>
-      <a href="blog.html">Blog</a>
-      <a href="contact.html">Contact</a>
-      <a href="#beta-signup">Join Beta</a>
-      <a href="https://beta.signalally.com">Beta</a>
-    </nav>
-  </div>
-</header>
-<section class="hero">
-  <h1>Trade Smarter. Stress Less.</h1>
-  <p>SignalAlly turns noise into clarity with real-time signals, sane risk presets, and optional auto-trading.</p>
-  <a class="cta" href="https://beta.signalally.com">Open the Beta Dashboard</a>
-</section>
-<section class="wrap section" id="beta-signup">
-  <h2>Join the Beta</h2>
-  <p class="muted">Be the first to try SignalAlly. We’ll invite testers in waves.</p>
-  <form name="beta-signup" method="POST" data-netlify="true" netlify-honeypot="hp" action="/thank-you.html" class="form">
-    <input type="hidden" name="form-name" value="beta-signup" />
-    <p style="display:none"><label>Do not fill this out: <input name="hp" /></label></p>
-    <label for="email">Email</label>
-    <input id="email" type="email" name="email" required placeholder="you@example.com" />
-    <label for="name">Name (optional)</label>
-    <input id="name" type="text" name="name" placeholder="Your name" />
-    <button type="submit">Request Invite</button>
-  </form>
-  <p class="small muted">We’ll never share your email. Unsubscribe anytime.</p>
-</section>
-<section class="wrap section">
-  <h2>Why SignalAlly</h2>
-  <div class="grid">
-    <div class="card"><h3>Clear Signals</h3><p>BUY/SELL/HOLD with plain-English reasons, not mystery math.</p></div>
-    <div class="card"><h3>Risk Presets</h3><p>Safe, Balanced, or Active — choose once and trade with confidence.</p></div>
-    <div class="card"><h3>Hands-Off Option</h3><p>Connect an exchange and let rules execute for you.</p></div>
-  </div>
-</section>
-<footer>
-  <div class="wrap small muted">© 2025 SignalAlly • 
-    <a href="https://beta.signalally.com" class="muted">Open Beta</a>
-  </div>
-</footer>
+    <h2>Join the Beta</h2>
+    <p>Be one of the first to try SignalAlly before public launch. Spaces are limited.</p>
 
-</body></html>
+    <!-- Beta Signup Form -->
+    <form name="beta-signup" method="POST" data-netlify="true" netlify-honeypot="hp" action="/thank-you.html" class="form">
+      <input type="hidden" name="form-name" value="beta-signup" />
+      <p style="display:none"><label>Do not fill this out: <input name="hp" /></label></p>
+
+      <label for="email">Email</label>
+      <input id="email" type="email" name="email" required placeholder="you@example.com" />
+
+      <label for="name">Name (optional)</label>
+      <input id="name" type="text" name="name" placeholder="Your name" />
+
+      <button type="submit">Request Invite</button>
+    </form>
+
+    <p class="muted small">
+      We’ll only use your email to send your beta invite — no spam, ever.
+    </p>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap small muted">© 2025 SignalAlly</div>
+  </footer>
+</body>
+</html>

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 48">
-  <rect x="6" y="10" rx="8" ry="8" width="44" height="28" fill="#00c4a7"/>
-  <path d="M14 28l7-7 6 6 8-8 5 5" stroke="#0f1c1a" stroke-width="3" fill="none"/>
-  <text x="60" y="31" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="20" fill="#0f1c1a">Signal</text>
-  <text x="120" y="31" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="20" fill="#00c4a7">Ally</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="56" viewBox="0 0 240 56" role="img" aria-label="SignalAlly">
+  <rect x="0" y="8" width="56" height="40" rx="10" fill="#00c4a7"/>
+  <path d="M12 34l10-10 8 8 10-10 6 6" stroke="#0f1c1a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="66" y="36" font-family="Inter, Arial, sans-serif" font-size="26" fill="#0f1c1a">Signal</text>
+  <text x="134" y="36" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700" fill="#00c4a7">Ally</text>
 </svg>
